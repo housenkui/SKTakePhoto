@@ -13,6 +13,8 @@
 		EF8118A91E8F5B030081478D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8118A71E8F5B030081478D /* Main.storyboard */; };
 		EF8118AB1E8F5B030081478D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8118AA1E8F5B030081478D /* Assets.xcassets */; };
 		EF8118AE1E8F5B030081478D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8118AC1E8F5B030081478D /* LaunchScreen.storyboard */; };
+		EF8118BA1E8F5B370081478D /* Puppetcat.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8118B61E8F5B370081478D /* Puppetcat.JPG */; };
+		EF8118BB1E8F5B370081478D /* takePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8118B91E8F5B370081478D /* takePhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		EF8118AA1E8F5B030081478D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF8118AD1E8F5B030081478D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF8118AF1E8F5B030081478D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8118B61E8F5B370081478D /* Puppetcat.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Puppetcat.JPG; sourceTree = "<group>"; };
+		EF8118B81E8F5B370081478D /* takePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = takePhoto.h; sourceTree = "<group>"; };
+		EF8118B91E8F5B370081478D /* takePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = takePhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,8 @@
 		EF8118921E8F5B030081478D = {
 			isa = PBXGroup;
 			children = (
+				EF8118B51E8F5B370081478D /* Resources */,
+				EF8118B71E8F5B370081478D /* TakePhoto */,
 				EF81189D1E8F5B030081478D /* SKTakePhoto */,
 				EF81189C1E8F5B030081478D /* Products */,
 			);
@@ -77,6 +84,23 @@
 				EF81189F1E8F5B030081478D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF8118B51E8F5B370081478D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF8118B61E8F5B370081478D /* Puppetcat.JPG */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF8118B71E8F5B370081478D /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				EF8118B81E8F5B370081478D /* takePhoto.h */,
+				EF8118B91E8F5B370081478D /* takePhoto.m */,
+			);
+			path = TakePhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +163,7 @@
 			files = (
 				EF8118AE1E8F5B030081478D /* LaunchScreen.storyboard in Resources */,
 				EF8118AB1E8F5B030081478D /* Assets.xcassets in Resources */,
+				EF8118BA1E8F5B370081478D /* Puppetcat.JPG in Resources */,
 				EF8118A91E8F5B030081478D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF8118A61E8F5B030081478D /* ViewController.m in Sources */,
+				EF8118BB1E8F5B370081478D /* takePhoto.m in Sources */,
 				EF8118A31E8F5B030081478D /* AppDelegate.m in Sources */,
 				EF8118A01E8F5B030081478D /* main.m in Sources */,
 			);

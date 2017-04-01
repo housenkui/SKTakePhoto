@@ -7,13 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "takePhoto.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *headBtn;
 
 @end
 
 @implementation ViewController
 
+- (IBAction)headerBtn:(UIButton *)sender {
+    
+    
+    [takePhoto sharePicture:^(UIImage *HeadImage){
+        
+        [self.headBtn setBackgroundImage:HeadImage forState:UIControlStateNormal];
+        
+    }];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
