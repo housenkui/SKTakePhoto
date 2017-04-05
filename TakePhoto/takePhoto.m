@@ -19,6 +19,11 @@
 #define takePhotoShare [takePhoto sharedModel]
 
 #import "takePhoto.h"
+@interface takePhoto ()<UIActionSheetDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (nonatomic,copy)sendPictureBlock sPictureBlock;
+
+@end
 
 @implementation takePhoto
 

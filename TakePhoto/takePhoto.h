@@ -12,16 +12,9 @@
 //使用block 返回值
 typedef void (^sendPictureBlock)(UIImage *image);
 
-@interface takePhoto : NSObject<UIActionSheetDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
-
-
-@property (nonatomic,copy)sendPictureBlock sPictureBlock;
-
-
-+ (takePhoto *)sharedModel;
+@interface takePhoto : NSObject
 
 +(void)sharePicture:(sendPictureBlock)block;
-
 
 @end
 
