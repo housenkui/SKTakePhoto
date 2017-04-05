@@ -5,3 +5,8 @@
     
 ![SKTakePhoto](http://upload-images.jianshu.io/upload_images/1485140-ccd8a0d949738817.png?imageMogr2/auto-orient/strip%7CimageView2/2)
 
+
+# 效果图
+![Alt text](http://upload-images.jianshu.io/upload_images/1485140-5b76fedc87edff55.png?imageMogr2/auto-orient/strip%7CimageView2/2)
+
+[详细使用可参考](http://www.jianshu.com/p/685bdf2f909c)
