@@ -15,7 +15,6 @@
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
-
 #define takePhotoShare [takePhoto sharedModel]
 
 #import "takePhoto.h"
@@ -24,11 +23,11 @@
 @property (nonatomic,copy)sendPictureBlock sPictureBlock;
 
 @end
+static id sharedModel = nil;
 
 @implementation takePhoto
 
 + (takePhoto *)sharedModel{
-    static takePhoto *sharedModel = nil;
     static dispatch_once_t oneToken;
     dispatch_once(&oneToken, ^{
         sharedModel = [[self alloc] init];
@@ -36,6 +35,14 @@
     return sharedModel;
 }
 
++ (instancetype)allocWithZone:(struct _NSZone *)zone
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedModel = [super allocWithZone:zone];
+    });
+    return sharedModel;
+}
 
 +(void)sharePicture:(sendPictureBlock)block{
     
