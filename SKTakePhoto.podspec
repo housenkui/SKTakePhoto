@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKTakePhoto"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "one code to get picture from Photo"
 
   # This description is used to generate tags and improve search results.
