@@ -18,3 +18,5 @@
     <string>使用相册</string>`<
     
 #  ><中间可以拷贝直接放到自己的 Info.plist中
+
+欢迎使用 pod search SKTakePhoto 来搜索我的Pod
